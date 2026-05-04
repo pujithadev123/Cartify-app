@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartify</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- <link rel="stylesheet" href="cart.css"> -->
+</head>
+<body>
+    <header id="head-part">
+     <div id="logo">
+        <img src="./assets/logo.png" alt="">
+     </div>
+     <div id="link_search"> 
+          <div id="nav-links">
+                <a href="#banner">Home</a>
+                <a href="#about">About</a>
+                <a href="#products">Products</a>
+                <a href="#contact">Contact</a>
+            </div> 
+         <div id="search-bar">
+            <input type="text" placeholder="Search...." class="bar"/>
+            <i class="fa-solid fa-magnifying-glass icon"></i>
+            </div>
+     </div>
+     <div id="left">
+         <div id="cart">
+       <i class="fa-solid fa-cart-shopping cart-icon"></i>
+       <div id="badge">0</div>
+    </div>
+    <div id="menu">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+     </div>
+    </header>
+
+    <div id="side-menu">
+            <div class="search-bar">
+            <input type="text" placeholder="Search...." class="bar"/>
+            <i class="fa-solid fa-magnifying-glass icon"></i>
+            </div> 
+            <div class="nav-links">
+                <a href="#banner">Home</a>
+                <a href="#about">About</a>
+                <a href="#products">Products</a>
+                <a href="#contact">contact</a>
+            </div>  
+        </div>
+    
+    <section id="banner">
+      <div id="text_btn">
+        <div id="text">
+            <h2>Shop More</h2>
+            <h2>Save More</h2>
+        </div>
+        <div id="btn">
+            <button>Shop now</button>
+        </div>
+      </div>
+    </section>
+     
+    <section id="about">
+        <div id="about-left">
+         <div id="left-parent">
+            <div class="one child">
+                <img src="./assets/img1.png" alt="Online Shopping" title="Online Shopping">
+            </div>
+            <div class="two child">
+                <img src="./assets/img2.png" alt="Mobile Shopping" title="Mobile Shopping">
+            </div>
+            <div class="three child">
+                <img src="./assets/img3.png" alt="Happy Customer" title="Happy Customer">
+            </div>
+            <div class="four child">
+                <img src="./assets/img4.png" alt="Delivery / Packaging" title="Delivery / Packaging">
+            </div>
+            <div class="five child">
+                <img src="./assets/img5.png" alt="Lifestyle Product" title="Lifestyle Product">
+            </div>
+            <div class="six child">
+                <img src="./assets/img6.png" alt="Fashion Lifestyle" title="Fashion Lifestyle">
+            </div>
+         </div>
+        </div>
+        <div id="about-right">
+        <div id="main-content">
+            <h1>Who we are?</h1>
+        </div>
+        <div id="msg1">
+            <h1> Redefining Your</h1>
+            <h1> Shopping Lifestyle</h1>
+        </div>
+        <div id="msg2">
+        <p> <i class="fas fa-quote-left quotes"></i>We bring together fashion,convenience, and modern living in one place. From everyday essentials to trendy styles,our platform makes shopping simple and enjoyable.<i class="fas fa-quote-right quotes"></i></p>
+        </div>
+        <div id="msg3">
+            <i>Quality products, seamless experience, and customer satisfaction are at the heart of everything we do.</i>
+        </div>
+        </div>
+    </section>
+
+    <section id="products">
+        <h3>Data loading....</h3>
+    </section>
+
+  <section id="contact">
+    <div id="contact-left">
+    <div class="contact-info1">
+      <h2>Get in touch</h2>
+      <p>Feel free to reach out for product details, support, or any collaboration opportunities.</p>
+      <div class="location">
+        <a href="https://www.google.com/maps?q=KPHB,Hyderabad,Telangana" target="blank"> <i class="fa-solid fa-location-dot area"></i></a>
+         <i>KPHB, Hyderabad, Telangana</i>
+      </div> 
+      <div class="contact-icons">
+         <a href="tel:+9173898745"><i class="fa-solid fa-phone"></i> </a>
+       <a  href="mailto:sivapujitha@gmail.com"><i class="fa-solid fa-envelope mail"></i></a>
+       <a href="https://wa.me/919876543210" target="blank"><i class="fa-brands fa-whatsapp"></i></i></a>
+      
+      </div>
+    </div>
+     
+     
+    </div>
+    <div id="contact-right">
+     <form action="" id="contact_form">
+      <h2>Sent message</h2>
+      <input type="text" placeholder="Enter your name.." required id="contact_name">
+      <input type="email" placeholder="Enter your email" required id="contact_mail">
+      <input type="tel" placeholder="Enter your phone number" required id="phone_num" pattern="[0-9]{10}">
+      <textarea rows="5" cols="25" id="sent_msg" placeholder="write your msg here.."></textarea>
+      <button id="sent_btn">submit</button>
+     </form>
+    </div>
+  </section>
+     <footer>
+        <small>&copy;2026 Cartify.All rights reserved.</small>
+    </footer>
+    <script src="home.js"></script>
+</body>
+</html>

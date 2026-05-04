@@ -1,0 +1,421 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+     min-height: 100vh;
+}
+main{
+    flex: 1;
+}
+#head-part{
+position: fixed;
+width: 100%;
+height: 10%;
+background-color:orangered;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+padding: 5px 20px;
+}
+
+#cart-section{
+    width: 100%;
+    min-height: auto;
+    /* padding: 100px 0 20px 0; */
+     padding: 110px 20px 20px 20px;
+   
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+    /* border: 2px solid black; */
+    /* padding: 10px; */
+}
+#logo{
+    width: 50px;
+    height: 30px;
+    border-radius: 10px;
+}
+#right{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.cart-icon{
+    color: white;
+    font-size:30px;
+}
+#cart{
+    position: relative;
+    width: 50px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#badge{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 2px solid orangered;
+    border-radius: 10px;
+    top: -3px;
+    right: -2px;
+    background: white;
+    color: orange;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#payment{
+    /* border: 2px solid black; */
+    padding: 20px;
+    width: 100%;
+    min-height: 150px;
+      border-radius: 10px;
+}
+#total_details{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px orangered;
+    border: none;
+    outline: none;
+    
+}
+
+footer{
+    width: 100%;
+    padding: 20px;
+    background-color: orangered;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.table-style{
+    border: 2px solid black;
+      border-collapse: collapse;
+      width: 100%;
+      text-align: center;
+       table-layout: fixed;
+
+}
+.th-style{
+    padding: 15px;
+    border: 2px solid black;
+    background-color: orangered;
+    color: white;
+   
+     
+}
+.tr-style{
+    background-color: #f5f5f5;
+}
+.td-style{
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+    border: 2px solid black;
+   
+}
+.pro_img_box{
+    width: 100%;
+    max-width: 200px;
+    margin: auto;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid black;
+}
+.pro_img_style{
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+}
+
+.trash{
+    font-size:medium;
+}
+.qua_box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.in_btn,.dec_btn{
+padding: 3px 10px;
+}
+.pay_btn_style{
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: orangered;
+    border: none;
+    border-radius: 10px;
+
+}
+.pay_btn_style:hover{
+    cursor: pointer;
+}
+
+/* ONLY MOBILE DEVICES */
+@media screen and (max-width: 480px) {
+
+    /* hide table header */
+    thead {
+        display: none;
+    }
+
+    table, tbody, tr {
+        display: block;
+        width: 100%;
+    }
+
+    /* CARD STYLE ROW */
+    tr {
+        background: #fff;
+        margin-bottom: 15px;
+        border-radius: 12px;
+        padding: 12px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    /* EACH ROW CELL AS BLOCK (important fix) */
+    td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 5px;
+        border: none;
+        width: 100%;
+    }
+
+    /* PRODUCT BOX */
+    .pro_img_box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        width: 100%;
+        border: none;
+    }
+
+    .pro_img_style {
+        width: 75px;
+        height: 75px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .pro_img_box h4 {
+        font-size: 14px;
+        text-align: center;
+        margin: 0;
+    }
+
+    /* FIX PRICE / QUANTITY / TOTAL LABEL ALIGNMENT */
+    td:nth-child(2)::before {
+        content: "Price";
+        font-weight: 500;
+        color: #555;
+    }
+
+    td:nth-child(3)::before {
+        content: "Quantity";
+        font-weight: 500;
+        color: #555;
+    }
+
+    td:nth-child(4)::before {
+        content: "Total";
+        font-weight: 500;
+        color: #555;
+    }
+
+    /* RIGHT SIDE VALUE STYLE */
+    td:nth-child(2),
+    td:nth-child(3),
+    td:nth-child(4) {
+        font-weight: bold;
+        color: orangered;
+    }
+
+    /* QUANTITY BUTTONS */
+    .qua_box {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .in_btn, .dec_btn {
+        padding: 6px 10px;
+        border-radius: 6px;
+    }
+
+    /* TRASH ICON */
+    .trash {
+        font-size: 18px;
+        color: red;
+    }
+
+    /* PAYMENT BOX */
+    #total_details {
+        width: 100%;
+        margin-top: 15px;
+         box-shadow: 0 0 10px 5px orangered;
+        border-radius: 10px;
+    }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    thead {
+        background: orangered;
+        color: white;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: center;
+        font-size: 13px;
+        border-bottom: 1px solid #eee;
+    }
+
+    /* product section */
+    .pro_img_box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .pro_img_style {
+        width: 55px;
+        height: 55px;
+        object-fit: cover;
+        border-radius: 6px;
+    }
+     .trash {
+        font-size: 18px;
+        color: red;
+    }
+
+    /* quantity */
+    .qua_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .in_btn, .dec_btn {
+        padding: 4px 7px;
+    }
+
+    /* highlight price */
+    td:nth-child(2),
+    td:nth-child(4) {
+        font-weight: bold;
+        color: orangered;
+    }
+}
+
+@media screen and (min-width: 769px) {
+
+    table {
+        width: 90%;
+        margin: auto;
+        border-collapse: collapse;
+        background: #fff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    }
+
+    thead {
+        background: orangered;
+        color: white;
+        font-size: 16px;
+    }
+
+    th, td {
+        padding: 14px;
+        text-align: center;
+        border-bottom: 1px solid #eee;
+    }
+
+    /* product section */
+    .pro_img_box {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .pro_img_style {
+        width: 70px;
+        height: 70px;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+    
+     .trash {
+        font-size: 18px;
+        color: red;
+    }
+    /* quantity buttons */
+    .qua_box {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .in_btn, .dec_btn {
+        padding: 6px 10px;
+    }
+
+    td:nth-child(2),
+    td:nth-child(4) {
+        font-weight: bold;
+        color: orangered;
+    }
+}

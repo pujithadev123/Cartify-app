@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+background: linear-gradient(135deg, orangered, #ff7a4d, #fff3f0);
+}
+#myform{
+    width: 90%;
+    max-width: 400px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    padding: 15px;
+
+    /* glass effect */
+     background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+
+    /* Soft border instead of black */
+    border: 1px solid rgba(255,255,255,0.3);
+
+    /* Soft shadow */
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+
+}
+#myform form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    width: 100%;
+    gap: 20px;
+}
+#uname,#uemail,#upswd,#cpswd{
+    position: relative;
+    width: 100%;
+    /* border: 2px solid black; */
+    padding: 10px;
+}
+#uname input,#uemail input,#upswd input,#cpswd input{
+    padding: 10px 40px 10px 10px;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+
+    background: rgba(255,255,255,0.8);
+}
+#uname i,#uemail i,#upswd i,#cpswd i{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+}
+#uname p,#uemail p,#upswd p,#cpswd p{
+    text-align: center;
+    padding-top: 5px;
+    display: none;
+}
+#signup{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+#signup button{
+    padding: 12px;
+    width: 100%;
+    border-radius: 25px;
+    border: none;
+    background: orangered;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#signup button:hover{
+    background: #ff3d00;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+#msg1,#msg2,#msg3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+}
+#text h1{
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+}
+input:focus{
+    box-shadow: 0 0 5px orangered;
+}
+
+#last-text a{
+    color: orangered;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#last-text a:hover{
+    text-decoration: none;
+}
+@media (max-width: 480px){
+
+    body{
+        padding: 15px;
+        align-items: center;
+    }
+
+    #myform{
+        width: 100%;
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    #text h1{
+        font-size: 20px;
+    }
+
+    #uname input,
+    #uemail input,
+    #upswd input,
+    #cpswd input{
+        padding: 10px 35px 10px 10px;
+        font-size: 14px;
+    }
+
+    #uname i,
+    #uemail i,
+    #upswd i,
+    #cpswd i{
+        right: 15px;
+        top: 18px;
+        font-size: 14px;
+    }
+
+    #signup button{
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    #last-text{
+        font-size: 13px;
+        text-align: center;
+    }
+    input:focus{
+    box-shadow: 0 0 5px orangered;
+}
+
+#last-text a{
+    color: orangered;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#last-text a:hover{
+    text-decoration: none;
+}
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    body{
+        padding: 15px;
+        align-items: center;
+    }
+
+    #myform{
+        max-width: 450px;
+        padding: 25px;
+    }
+
+    #text h1{
+        font-size: 22px;
+    }
+
+    #uname input,
+    #uemail input,
+    #upswd input,
+    #cpswd input{
+        font-size: 15px;
+    }
+
+    #signup button{
+        font-size: 15px;
+    }
+
+    #last-text{
+        font-size: 14px;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px){
+
+    #myform{
+        max-width: 420px;
+    }
+
+    #text h1{
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, orangered, #ff7a4d, #fff3f0);
+   
+}
+#myform{
+    width: 90%;
+    max-width: 400px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    padding: 15px;
+
+     background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+
+    /* Soft border instead of black */
+    border: 1px solid rgba(255,255,255,0.3);
+
+    /* Soft shadow */
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+
+}
+#myform form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    width: 100%;
+    gap: 20px;
+}
+#uemail,#upswd{
+    position: relative;
+    width: 100%;
+    /* border: 2px solid black; */
+    padding: 10px;
+}
+#uemail input,#upswd input{
+  padding: 10px 40px 10px 10px;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+
+    background: rgba(255,255,255,0.8);
+}
+#uemail i,#upswd i{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+}
+#uemail p,#upswd p{
+    text-align: center;
+    padding-top: 5px;
+    display: none;
+}
+#login{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+#login button{
+    padding: 12px;
+    width: 100%;
+    border-radius: 25px;
+    border: none;
+    background: orangered;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#login button:hover{
+    background: #ff3d00;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#msg1,#msg2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+}
+#text h1{
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+}
+input:focus{
+    box-shadow: 0 0 5px orangered;
+}
+
+#last-text a{
+    color: orangered;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#last-text a:hover{
+    text-decoration: none;
+}
+
+@media (max-width: 480px){
+
+    body{
+        padding: 15px;
+        align-items: center;
+    }
+
+    #myform{
+        width: 100%;
+        max-width: 340px;
+        padding: 12px;
+        gap: 10px;
+        border-radius: 10px;
+    }
+
+    #text h1{
+        font-size: 18px;
+    }
+
+    #uemail, #upswd{
+        padding: 8px;
+    }
+
+    #uemail input,
+    #upswd input{
+        font-size: 14px;
+        padding: 10px 35px 10px 10px;
+    }
+
+    #uemail i,
+    #upswd i{
+        top: 18px;
+        right: 12px;
+        font-size: 14px;
+    }
+
+    #login button{
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #msg1, #msg2{
+        font-size: 12px;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 768px){
+
+    #myform{
+        width: 80%;
+        max-width: 360px;
+        padding: 15px;
+    }
+
+    #text h1{
+        font-size: 22px;
+    }
+
+    #login button{
+        font-size: 15px;
+    }
+}
