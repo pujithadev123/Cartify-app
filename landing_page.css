@@ -1,0 +1,1106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: orangered;
+    z-index: 1;
+    box-shadow: 0 0 10px 10px rgb(244, 230, 225);
+}
+html{
+    scroll-behavior: smooth;
+}
+section{
+    scroll-margin-top: 70px;
+}
+#logo-img{
+    width: 50px;
+    height: 30px;
+    border-radius: 10px;
+}
+#nav-links{
+   display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center; 
+    gap: 25px;
+    
+}
+#nav-links a{
+    color: white;
+    text-decoration: none;
+}
+.login,.signup{
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: orangered;
+
+}
+#banner{
+     margin-top: 60px;
+    width: 100%;
+    min-height: 400px;
+    /* border: 2px solid black; */
+    /* background-color: pink; */
+    z-index: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-shadow: 0 0 10px 10px gainsboro;
+}
+#banner #left{
+    width: 50%;
+   height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 40px; */
+    gap: 20px;
+    /* background-color: orange; */
+    padding-left: 30px;
+    
+
+}
+#banner #right{
+    width: 50%;
+    height: 100%;
+    /* background-color:pink; */
+}
+#right img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.txt{
+    width: 100%;
+    /* height: 0px; */
+    /* border: 2px solid black; */
+}
+.txt-one,.txt-two,.txt-three,.txt-four,.txt-five{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    /* justify-content: center; */
+    align-items: flex-start;
+    /* padding-left: 20px; */
+    text-align: left;
+
+}
+.txt-one h3 {
+    border: 2px solid black;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color:white;
+    color: orangered;
+    border: none;
+    outline: none;
+    font-size: 50px;
+    box-shadow: 0 0 10px 10px gainsboro;
+    
+}
+.txt-two{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    color: orangered;
+    font-size: xx-large;
+}
+.txt-four{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px; 
+}
+#account-create{
+    background-color: white;
+    color: orangered;
+    border: 2px solid orangered;
+}
+.txt-four button{
+    padding: 10px 10px;
+    border-radius: 10px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    outline: none;
+}
+.txt-five{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.txt-five #subtxt1,.txt-five #subtxt2,.txt-five #subtxt3{
+   /* border: 2px solid black;  */
+   padding: 10px 10px;
+   border-radius: 10px;
+   /* background-color: rgb(250, 250, 250); */
+   color:orangered;
+}
+#features{
+    width: 100%;
+    min-height: 150px;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 10px;
+}
+.box{
+    flex: 1;
+    height: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 25px 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 10px gainsboro;
+     border: none;
+    outline: none;
+}
+#box-left{
+    width: 20%;
+    height: 100%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 5px;
+    border-radius: 50%;
+    margin-top: 10px;
+    box-shadow: 0 0 5px 5px gainsboro;
+    background-color: rgb(193, 191, 191);
+    border: none;
+    outline: none;
+
+}
+#box-left:hover{
+    transform: scale(1.1);
+}
+#box-left i{
+    color:orangered;
+   
+}
+#box-right{
+    width: 70%;
+    height: 100%;
+    border-radius: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#box-right h3{
+    color: orangered;
+}
+#categories{
+    width: 100%;
+    min-height: 280px;
+    box-shadow: 0 0 10px 10px rgb(245, 193, 174);
+    /* border: 2px solid black; */
+
+}
+#category-heading{
+    width: 100%;
+    height: 80px;
+    /* background-color: brown; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: orangered;
+}
+#category-images{
+    width: 100%;
+    min-height: 200px;
+    /* background-color: blueviolet; */
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 5px 15px;
+}
+#category-images #img{
+flex: 1;
+height: auto;
+border-radius: 10px;
+border: 2px solid grey;
+
+}
+#pic img{
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    object-fit: contain;
+}
+#img-name h3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+     border: none;
+    outline: none;
+    color: orangered;
+}
+#reviews{
+    width: 100%;
+    min-height: 300px;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px 10px gainsboro;
+
+}
+#top{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    /* background-color: aquamarine; */
+}
+#top h2{
+    color: orangered;
+}
+#bottom{
+     width: 100%;
+    height: 260px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 0 25px;
+    /* background-color: yellowgreen; */
+    
+}
+.review{
+ width: 25%;
+ justify-content: flex-start;
+ padding: 10px 15px;
+ border-radius: 10px;
+ height: auto;
+ background-color: white;
+ box-shadow: 0 0 5px 5px gainsboro;
+}
+.review:hover{
+    border: 2px solid orangered;
+    cursor: pointer;
+}
+.quote{
+    color: orangered;
+    font-size: 20px;
+}
+#reviewtxt{
+    width: 70%;
+    height: auto;
+    /* background-color: chocolate; */
+}
+#customer{
+width: 100%;
+height: auto;
+/* border: 2px solid black;   */
+display: flex;
+flex-wrap: wrap; 
+
+
+}
+.customer-pic{
+    width: 30%;
+    height: 70px;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.customer-pic img{
+    width: 70%;
+    height: 50px;
+    border-radius: 50%;
+}
+.customer-rating{
+    width: 70%;
+    height: auto;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* background-color:blueviolet; */
+}
+.customer-rating h4{
+    color: orangered;
+}
+#rating i{
+    color:orangered;
+}
+footer{
+    width: 100%;
+    min-height: 150px;
+    background-color: orangered;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 0;
+}
+#footer-top{
+width: 100%;
+display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  
+}
+#footer-bottom p{
+color: white;
+}
+footer .brand,footer .links,footer .contact{
+    /* border: 2px solid black; */
+    width: 30%;
+    height: auto;
+    /* border-color: yellow; */
+    padding: 10px 15px;
+}
+.brand{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.brand img{
+ width: 40%;
+ height: 50px;
+ border-radius: 10px;
+}
+.brand p{
+    text-align: center;
+    color: white;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    padding-top: 25px;
+}
+.links-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white; 
+}
+.links-part a{
+    text-decoration: none;
+    color: white;
+}
+.links-part a:hover{
+    cursor: pointer;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    color: white;
+}
+#contact-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px; 
+}
+.icons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  
+}
+.location a,.location i{
+      color:white;
+
+}
+.icons a{
+      color:white;
+}
+
+@media (max-width:480px){
+    #menu{
+        display: block;
+    }
+     #menu i{
+        font-size: 18px;
+        color: white;
+    }
+    #nav-links{
+        display: none;
+    }
+    #buttons{
+        display: none;
+    }
+    /* SIDE MENU */
+    #side-menu{
+        position: fixed;
+        right: 0;
+        top: 60px;
+        width: 70%;
+        height: calc(100vh - 60px);
+        background-color: rgba(255, 68, 0, 0.9);
+        transform: translateX(100%);
+        transition: 0.3s;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    #side-menu.show-menu{
+        transform: translateX(0);
+    }
+
+    .nav-links{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .nav-links a:hover{
+        cursor: pointer;
+    }
+    .nav-links a{
+        text-decoration: none;
+        font-size: 14px;
+        color: white;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        /* border: 2px solid black; */
+    }
+    .buttons button{
+    width: 100%;              /* 🔥 important */
+    padding: 10px;            /* increase for better UI */
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: orangered;
+}
+
+
+/* ================= BANNER ================= */
+#banner{
+    flex-direction: column;
+    padding: 20px 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#banner #left,
+#banner #right{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#banner #left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#banner #right img{
+    width: 80%;
+    height: auto;
+    margin-top: 15px;
+}
+.txt-one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.txt-one h3{
+    font-size: 26px;
+    text-align: center;
+}
+
+.txt-two{
+    font-size: 16px;
+    justify-content: center;
+    text-align: center;
+}
+
+.txt-three p{
+    font-size: 14px;
+    text-align: center;
+}
+
+.txt-four,
+.txt-five{
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* ================= FEATURES ================= */
+#features{
+    flex-direction: column;
+    align-items: center;
+}
+
+.box{
+    width: 90%;
+    margin: 10px 0;
+}
+
+/* ================= CATEGORIES ================= */
+#categories{
+    padding: 15px 10px;
+}
+
+#category-images{
+    display: flex;
+    flex-direction: column;   /* 🔥 stack cards */
+    align-items: center;
+    gap: 15px;
+}
+
+/* CARD */
+#category-images #img{
+    width: 90%;              /* 🔥 reduce card size */
+    max-width: 300px;
+    height: auto;            /* 🔥 prevent big fixed height */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* IMAGE */
+#category-images #img img{
+    width: 100%;
+    height: 140px;           /* controlled mobile image size */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* TEXT */
+#category-images #img p{
+    font-size: 14px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+
+/* ================= REVIEWS ================= */
+#bottom{
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+}
+
+.review{
+    width: 90%;
+    margin: 10px 0;
+}
+
+/* ================= FOOTER ================= */
+#footer-top{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+}
+
+footer .brand,
+footer .links,
+footer .contact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact,
+.links-part{
+    align-items: center;
+    justify-content: center;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     width: 100%;
+}
+
+
+}
+
+
+
+@media (min-width:481px) and (max-width:768px){
+  #menu{
+        display: block;
+    }
+     #menu i{
+        font-size: 18px;
+        color: white;
+    }
+    #nav-links{
+        display: none;
+    }
+    #buttons{
+        display: none;
+    }
+    /* SIDE MENU */
+    #side-menu{
+        position: fixed;
+        right: 0;
+        top: 60px;
+        width: 50%;
+        height: calc(100vh - 60px);
+        background-color: rgba(255, 68, 0, 0.9);
+        transform: translateX(100%);
+        transition: 0.3s;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    #side-menu.show-menu{
+        transform: translateX(0);
+    }
+
+    .nav-links{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .nav-links a:hover{
+        cursor: pointer;
+    }
+    .nav-links a{
+        text-decoration: none;
+        font-size: 14px;
+        color: white;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 50%;
+        height: auto;
+        /* border: 2px solid black; */
+    }
+    .buttons button{
+    width: 100%;              /* 🔥 important */
+    padding: 20px 10px;            /* increase for better UI */
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: orangered;
+}
+/* #banner{
+    flex-direction: column;
+    padding: 30px 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#banner #left,
+#banner #right{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+} */
+#banner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+#banner #left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#banner #left .txt-two{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+#banner #right img{
+    width: 55%;
+    height: auto;
+    margin-top: 20px;
+}
+#banner h1,
+#banner h2,
+#banner h3,
+#banner p{
+    text-align: center;
+    margin: 5px 0;
+}
+/* TEXT */
+.txt-one h3{
+    font-size: 30px;
+}
+
+.txt-two{
+    font-size: 18px;
+    justify-content: center;
+}
+
+.txt-three p{
+    font-size: 15px;
+    text-align: center;
+}
+
+/* ================= FEATURES ================= */
+#features{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.box{
+    flex: 1 1 40%;   /* 🔥 better than width */
+    max-width: 45%;
+    min-width: 200px;
+}
+
+
+/* ================= TESTIMONIALS ================= */
+#bottom{
+    display: block;   /* 🔥 important fix */
+    padding: 20px 10px;
+}
+
+#bottom h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* review cards wrapper */
+#bottom .review-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* review cards */
+.review{
+    flex: 1 1 45%;
+    max-width: 45%;
+    min-width: 220px;
+}
+
+/* ================= CATEGORIES ================= */
+#categories{
+    width: 100%;
+    min-height: auto;   /* 🔥 remove fixed thinking */
+    padding: 20px 0;
+}
+#categories h2{
+    margin-bottom: 20px;
+    text-align: center;
+}
+#category-images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    height: auto;
+}
+#category-images #img{
+    flex: 1 1 220px;     /* 🔥 prevents shrinking */
+    max-width: 240px;
+    min-width: 200px;
+    height: auto;        /* 🔥 important */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+/* ================= REVIEWS ================= */
+#bottom{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    height: auto;
+}
+
+.review{
+    flex: 1 1 40%;
+    max-width: 45%;
+    min-width: 200px;
+}
+
+/* ================= FOOTER ================= */
+#footer-top{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+footer .brand,
+footer .links,
+footer .contact{
+    flex: 1 1 40%;
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     width: 100%;
+}
+}
+
+
+@media (min-width:769px) and (max-width:1024px){
+#menu{
+    display: none;
+}
+#side-menu{
+    display: none;
+}
+#banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 30px;
+    min-height: 450px;
+    box-sizing: border-box;
+}
+
+/* LEFT */
+#banner #left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+}
+
+/* RIGHT */
+#banner #right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner #right img{
+    width: 80%;
+    max-width: 350px;
+    height: auto;
+}
+
+
+/* ================= FEATURES ================= */
+/* #features{
+    padding: 40px 20px;
+    min-height: auto;
+}
+
+#features .features-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.box{
+    flex: 1 1 30%;
+    max-width: 32%;
+    min-width: 220px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+#features{
+    padding: 40px 20px;
+}
+
+/* GRID CONTAINER */
+#features .features-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 per row */
+    gap: 20px;
+}
+
+/* FEATURE BOX */
+.box{
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* If only 1 item in last row → center it */
+#features .features-container > .box:nth-child(4):nth-last-child(1){
+    grid-column: 2 / 3;  /* centers single item */
+}
+
+/* ================= CATEGORIES ================= */
+#categories{
+    padding: 40px 20px;
+    min-height: auto;
+}
+
+#category-images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#category-images #img{
+    flex: 1 1 30%;
+    max-width: 32%;
+    min-width: 220px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#category-images #img img{
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* ================= REVIEWS / TESTIMONIALS ================= */
+#bottom{
+    padding: 40px 20px;
+    min-height: auto;
+}
+
+#bottom .review-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.review{
+    flex: 1 1 30%;
+    max-width: 32%;
+    min-width: 220px;
+    height: auto;
+    padding: 15px;
+}
+
+
+/* ================= FOOTER ================= */
+#footer-top{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+    padding: 40px 20px;
+    gap: 20px;
+}
+
+footer .brand,
+footer .links,
+footer .contact{
+    flex: 1 1 30%;
+    max-width: 32%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+}
+
+@media (min-width:1025px){
+#menu{
+    display: none;
+}
+#side-menu{
+    display: none;
+}
+
+
+
+}

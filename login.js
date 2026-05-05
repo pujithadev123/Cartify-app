@@ -54,7 +54,7 @@ let txt=document.getElementById("last-text")
 let login_page=txt.querySelector("a")
 login_page.addEventListener("click",(e)=>{
     e.preventDefault()
-    window.location.href="./index.html"
+    window.location.href="./signup.html"
 })
 
 

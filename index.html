@@ -4,44 +4,276 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cartify</title>
-    <link rel="stylesheet" href="signup.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="landing_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
-
+    
 </head>
 <body>
-    <div id="myform">
-        <div id="text"><h1>SignUp Form</h1></div>
-        <form action="">
-            <div id="uname">
-                <input type="text" placeholder="Enter your name" required/>
-                <i class="fa fa-user" aria-hidden="true"></i>
-                <p id="msg1">Error</p>
-            </div>
-            <div id="uemail">
-                <input type="email" placeholder="Enter mail" required/>
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                 <p id="msg2">Error</p>
-            </div>
-            <div id="upswd">
-                <input type="password" placeholder="Enter password" required>
-                <i class="fa-solid fa-eye"></i>
-                 <p id="msg3">Error</p>
-            </div>
-            <div id="cpswd">
-                <input type="password" placeholder="Enter password" required>
-                <i class="fa-solid fa-eye"></i>
-                 <p id="msg4">Error</p>
-            </div>
-        </form>
-        <div id="signup">
-            <button id="btn">Signup</button>
+    <header>
+        <div>
+            <img src="./assets/logo.png" alt="logo" id="logo-img">
         </div>
-        <div id="last-text">
-            <p>Already have an account?<a href="">Signin</a></p>
+        <div id="nav-links">
+         <a href="#banner">Home</a>
+         <a href="#features">Features</a>
+         <a href="#categories">Categories</a>
+         <a href="#last-part">Contact</a>
+        </div>
+        <div id="buttons">
+            <button class="login">Login</button>
+            <button class="signup">Signup</button>
+        </div>
+        <div id="menu">
+        <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <div id="side-menu">
+        <div class="nav-links">
+         <a href="#banner">Home</a>
+         <a href="#features">Features</a>
+         <a href="#categories">Categories</a>
+         <a href="#last-part">Contact</a>
+        </div>
+        <div class="buttons">
+            <button class="login">Login</button>
+            <button class="signup">Signup</button>
         </div>
     </div>
-    <script src="signup.js"></script>
+
+    <section id="banner">
+        <div id="left">
+         <div class="txt-one txt">
+          <h3>Welcome to Cartify</h3>
+         </div>
+         <div class="txt-two txt">
+            <h2>Shop Smater</h2> 
+            <h2>Live Better</h2>
+         </div>
+         <div class="txt-three txt">
+            <p>Discover amazing products,unbeatable delas and a <br>seamless shopping experience with Cartify.</p>
+         </div>
+         <div class="txt-four txt" >
+            <button id="shop-now"><i class="fa-solid fa-bag-shopping"></i>&nbsp;&nbsp;ShopNow</button>
+            <button id="account-create"><i class="fa-regular fa-user"></i>&nbsp;&nbsp;CreateAccount</button>
+         </div>
+         <div class="txt-five txt">
+            <div id="subtxt1">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>Secure payment</span>
+            </div>
+            <div id="subtxt2">
+                <i class="fa-solid fa-truck-fast"></i>
+                <span>fast delivery</span>
+            </div>
+            <div id="subtxt3">
+                <i class="fa-solid fa-rotate-left"></i>
+                 <span>  Easy returns</span>
+            </div>
+         </div>
+        </div>
+        <div id="right">
+        <img src="./assets/landing-page.png" alt="landing-page" />
+        </div>
+    </section>
+    
+    <section id="features">
+        <div class="box1 box">
+        <div id="box-left">
+         <i class="fa-solid fa-bag-shopping"></i>
+        </div>
+        <div id="box-right">
+          <h3>Wide range of products</h3>
+          <p>From electronics to fassion,we have everything you need</p>
+        </div>
+        </div>
+         <div class="box2 box">
+             <div id="box-left">
+        <i class="fa-solid fa-tag"></i>
+        </div>
+        <div id="box-right">
+          <h3>Best prices</h3>
+          <p>Unbeatable deals and offers every day.</p>
+        </div>
+         
+        </div>
+         <div class="box3 box">
+           <div id="box-left">
+                <i class="fa-solid fa-truck-fast"></i>
+        </div>
+        <div id="box-right">
+          <h3>Fast and secure delivery</h3>
+          <p>Quick delivery at your door steps.</p>
+        </div>
+        </div>
+         <div class="box4 box">
+           <div id="box-left">
+         <i class="fa-solid fa-shield-halved"></i>
+        </div>
+        <div id="box-right">
+          <h3>100% secure payments</h3>
+          <p>Your transactions are safe with us.</p>
+        </div>
+        </div>
+    </section>
+
+    <section id="categories">
+        <div id="category-heading">
+           <h1>Shop by Category</h1>
+        </div>
+        <div id="category-images">
+         <div id="img">
+            <div id="pic">
+            <img src="./assets/img1.png" alt="electronics">
+            </div>
+            <div id="img-name">
+                <h3>Electronics</h3>
+            </div>
+         </div>
+         <div id="img">
+             <div id="pic">
+            <img src="./assets/img1.png" alt="electronics">
+            </div>
+            <div id="img-name">
+                <h3>Fashion</h3>
+            </div>
+         </div>
+         <div id="img">
+             <div id="pic">
+            <img src="./assets/img1.png" alt="electronics">
+            </div>
+            <div id="img-name">
+                <h3>Home & living</h3>
+            </div>
+         </div>
+         <div id="img">
+             <div id="pic">
+            <img src="./assets/img1.png" alt="electronics">
+            </div>
+            <div id="img-name">
+                <h3>Beauty</h3>
+            </div>
+         </div>
+         <div id="img">
+             <div id="pic">
+            <img src="./assets/img1.png" alt="electronics">
+            </div>
+            <div id="img-name">
+                <h3>Sports</h3>
+            </div>
+         </div>
+        </div>
+    </section>
+
+    <section id="reviews">
+        <div id="top">
+            <h2>What our customers Say?</h2>
+        </div>
+        <div id="bottom">
+        <div class="review">
+             <i class="fas fa-quote-left quotes quote"></i>
+             <div id="reviewtxt">
+              <p>Cartify is my go-to store for online shopping.Great products,fast delivery and amazing customer service!</p>
+             </div>
+             <div id="customer">
+                <div class="customer-pic">
+                 <img src="./assets/logo.png" alt="customer">
+                </div>
+                <div class="customer-rating">
+                  <h4>Anjali sharma</h4>
+                   <div id="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                   </div>
+                </div>
+             </div>
+            
+        </div>
+        <div class="review">
+             <i class="fas fa-quote-left quotes quote"></i>
+             <div id="reviewtxt">
+              <p>Cartify is my go-to store for online shopping.Great products,fast delivery and amazing customer service!</p>
+             </div>
+             <div id="customer">
+                <div class="customer-pic">
+                 <img src="./assets/logo.png" alt="customer">
+                </div>
+                <div class="customer-rating">
+                  <h4>Rohan varma</h4>
+                   <div id="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                   </div>
+                </div>
+             </div>
+            
+        </div>
+        <div class="review">
+             <i class="fas fa-quote-left quotes quote"></i>
+             <div id="reviewtxt">
+              <p>Cartify is my go-to store for online shopping.Great products,fast delivery and amazing customer service!</p>
+             </div>
+             <div id="customer">
+                <div class="customer-pic">
+                 <img src="./assets/logo.png" alt="customer">
+                </div>
+                <div class="customer-rating">
+                  <h4>Priya patel</h4>
+                   <div id="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                   
+                   </div>
+                </div>
+             </div>
+            
+        </div>
+        </div>
+    </section>
+    
+    <footer id="last-part">
+      <div id="footer-top">
+         <div class="brand">
+         <img src="./assets/logo.png" alt="footer-logo">
+         <p>Shop smarter with the best products, prices, and fast delivery.</p>
+        </div>
+        <div class="links">
+        <h3>Quick links</h3>
+       <div class="links-part">
+         <a href="#banner">Home</a>
+        <a href="#categories">Categories</a>
+        <a href="#features">Features</a>
+        <a href="#last-part">Contact</a>
+       </div>
+        </div>
+        <div class="contact">
+        <h3>Contact Us</h3>
+        <div id="contact-details">
+         <div class="location">
+        <a href="https://www.google.com/maps?q=KPHB,Hyderabad,Telangana" target="blank"> <i class="fa-solid fa-location-dot area"></i></a>
+         <i>KPHB, Hyderabad, Telangana</i>
+      </div>
+          <div class="icons">
+            <a href="tel:+9173898745"><i class="fa-solid fa-phone"></i> </a>
+       <a  href="mailto:sivapujitha@gmail.com"><i class="fa-solid fa-envelope mail"></i></a>
+       <a href="https://wa.me/919876543210" target="blank"><i class="fa-brands fa-whatsapp"></i></i></a>
+        </div>
+          </div>
+   
+        </div>
+      </div>
+       <div id="footer-bottom">
+        <p>&copy;2026 Cartify. All rights reserved</p>
+       </div>
+    </footer>
+    <script src="landing_page.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
