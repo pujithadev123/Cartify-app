@@ -235,7 +235,7 @@ section{
      display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     gap: 15px;
     padding: 5px 15px;
 }
@@ -612,20 +612,21 @@ footer .brand,footer .links,footer .contact{
     width: 90%;              /* 🔥 reduce card size */
     max-width: 300px;
     height: auto;            /* 🔥 prevent big fixed height */
-    padding: 10px;
+    /* padding: 10px; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    object-fit: contain;
 }
 
-/* IMAGE */
-#category-images #img img{
+IMAGE
+ #category-images #img img{
     width: 100%;
     height: 140px;           /* controlled mobile image size */
     object-fit: cover;
     border-radius: 10px;
-}
+ } 
 
 /* TEXT */
 #category-images #img p{
@@ -878,6 +879,12 @@ footer .contact{
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    
+   
+}
+#category-images #img img{
+object-fit: contain;
+width: 100%;
 }
 
 
