@@ -12,11 +12,15 @@ let shop_now=document.getElementById("shop-now")
 let account_create=document.getElementById("account-create")
 
 shop_now.addEventListener("click",()=>{
-  Swal.fire("Please login to continue shopping")  
+  Swal.fire("Please login to continue shopping").then(()=>{
+    window.location.href="./login.html"
+  }) 
 }
 )
 account_create.addEventListener("click",()=>{
-    Swal.fire("Create an account to start your journey")   
+    Swal.fire("Create an account to start your journey").then(()=>{
+        window.location.href="./signup.html"
+    }) 
 })
 let login_btn=document.querySelectorAll(".login")
 let signup_btn=document.querySelectorAll(".signup")
